@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C0D29651F3968590058FE0E /* VideoSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D29641F3968590058FE0E /* VideoSession.swift */; };
+		0C0D29661F3974290058FE0E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0661F3858A7009A0AC2 /* AVFoundation.framework */; };
+		0C0D29671F39742F0058FE0E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0681F3858AE009A0AC2 /* CoreTelephony.framework */; };
+		0C0D29681F3974350058FE0E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD06A1F3858B6009A0AC2 /* CoreMedia.framework */; };
+		0C0D29691F3974350058FE0E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD06B1F3858B6009A0AC2 /* CoreMotion.framework */; };
+		0C0D296A1F3974420058FE0E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0721F385911009A0AC2 /* AudioToolbox.framework */; };
+		0C0D296B1F3974420058FE0E /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0741F385917009A0AC2 /* VideoToolbox.framework */; };
+		0C0D296C1F39744A0058FE0E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0761F38591F009A0AC2 /* SystemConfiguration.framework */; };
+		0C0D296D1F3974500058FE0E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD06E1F3858BD009A0AC2 /* libc++.tbd */; };
+		0C0D296E1F3974590058FE0E /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0701F3858C3009A0AC2 /* libresolv.tbd */; };
+		0C0D296F1F3974600058FE0E /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD07A1F385934009A0AC2 /* libstdc++.6.tbd */; };
+		0C0D29701F3974650058FE0E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD07C1F38593C009A0AC2 /* libz.tbd */; };
+		0C0D29711F39746B0058FE0E /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD07E1F385942009A0AC2 /* libbz2.tbd */; };
+		0C0D29721F3974710058FE0E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0801F385949009A0AC2 /* libsqlite3.tbd */; };
+		0C6FD0211F3856B6009A0AC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0201F3856B6009A0AC2 /* main.m */; };
+		0C6FD0241F3856B6009A0AC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0231F3856B6009A0AC2 /* AppDelegate.m */; };
+		0C6FD02A1F3856B6009A0AC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C6FD0281F3856B6009A0AC2 /* Main.storyboard */; };
+		0C6FD02C1F3856B6009A0AC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C6FD02B1F3856B6009A0AC2 /* Assets.xcassets */; };
+		0C6FD02F1F3856B6009A0AC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C6FD02D1F3856B6009A0AC2 /* LaunchScreen.storyboard */; };
+		0C6FD0501F385705009A0AC2 /* EVRTCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0371F385705009A0AC2 /* EVRTCRootViewController.m */; };
+		0C6FD0511F385705009A0AC2 /* EVRTCSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0391F385705009A0AC2 /* EVRTCSettingViewController.m */; };
+		0C6FD0521F385705009A0AC2 /* EVRTCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD03B1F385705009A0AC2 /* EVRTCViewController.m */; };
+		0C6FD0531F385705009A0AC2 /* EVShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD03D1F385705009A0AC2 /* EVShareViewController.m */; };
+		0C6FD05B1F385705009A0AC2 /* VideoSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD04F1F385705009A0AC2 /* VideoSession.m */; };
+		0C6FD0671F3858A7009A0AC2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0661F3858A7009A0AC2 /* AVFoundation.framework */; };
+		0C6FD0691F3858AE009A0AC2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0681F3858AE009A0AC2 /* CoreTelephony.framework */; };
+		0C6FD06C1F3858B6009A0AC2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD06A1F3858B6009A0AC2 /* CoreMedia.framework */; };
+		0C6FD06D1F3858B6009A0AC2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD06B1F3858B6009A0AC2 /* CoreMotion.framework */; };
+		0C6FD06F1F3858BD009A0AC2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD06E1F3858BD009A0AC2 /* libc++.tbd */; };
+		0C6FD0711F3858C3009A0AC2 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0701F3858C3009A0AC2 /* libresolv.tbd */; };
+		0C6FD0731F385911009A0AC2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0721F385911009A0AC2 /* AudioToolbox.framework */; };
+		0C6FD0751F385917009A0AC2 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0741F385917009A0AC2 /* VideoToolbox.framework */; };
+		0C6FD0771F38591F009A0AC2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0761F38591F009A0AC2 /* SystemConfiguration.framework */; };
+		0C6FD07B1F385934009A0AC2 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD07A1F385934009A0AC2 /* libstdc++.6.tbd */; };
+		0C6FD07D1F38593C009A0AC2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD07C1F38593C009A0AC2 /* libz.tbd */; };
+		0C6FD07F1F385942009A0AC2 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD07E1F385942009A0AC2 /* libbz2.tbd */; };
+		0C6FD0811F385949009A0AC2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0801F385949009A0AC2 /* libsqlite3.tbd */; };
+		0C6FD08B1F3860BD009A0AC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD08A1F3860BD009A0AC2 /* AppDelegate.swift */; };
+		0C6FD0901F3860BD009A0AC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C6FD08E1F3860BD009A0AC2 /* Main.storyboard */; };
+		0C6FD0921F3860BD009A0AC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C6FD0911F3860BD009A0AC2 /* Assets.xcassets */; };
+		0C6FD0951F3860BD009A0AC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C6FD0931F3860BD009A0AC2 /* LaunchScreen.storyboard */; };
+		0C6FD0B01F3864E0009A0AC2 /* AgoraRtcEngineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD09C1F3864E0009A0AC2 /* AgoraRtcEngineKit.framework */; };
+		0C6FD0B11F3864E0009A0AC2 /* EVMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD09D1F3864E0009A0AC2 /* EVMediaFramework.framework */; };
+		0C6FD0B21F3864E0009A0AC2 /* EVRTCFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD09E1F3864E0009A0AC2 /* EVRTCFramework.framework */; };
+		0C6FD0B31F3864E0009A0AC2 /* EVSDKBaseFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD09F1F3864E0009A0AC2 /* EVSDKBaseFramework.framework */; };
+		0C6FD0B41F3864E0009A0AC2 /* CCAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0A21F3864E0009A0AC2 /* CCAlertManager.m */; };
+		0C6FD0B51F3864E0009A0AC2 /* EVMediaAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0A41F3864E0009A0AC2 /* EVMediaAuth.m */; };
+		0C6FD0B61F3864E0009A0AC2 /* EVNetRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0A61F3864E0009A0AC2 /* EVNetRequestManager.m */; };
+		0C6FD0B71F3864E0009A0AC2 /* EVScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0A81F3864E0009A0AC2 /* EVScreenManager.m */; };
+		0C6FD0B81F3864E0009A0AC2 /* EVGenerateQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0AB1F3864E0009A0AC2 /* EVGenerateQRViewController.m */; };
+		0C6FD0B91F3864E0009A0AC2 /* EVScanQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0AD1F3864E0009A0AC2 /* EVScanQRViewController.m */; };
+		0C6FD0BA1F3864E0009A0AC2 /* UIView+XibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0AF1F3864E0009A0AC2 /* UIView+XibConfiguration.m */; };
+		0C6FD0D01F386516009A0AC2 /* AgoraRtcEngineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0BC1F386516009A0AC2 /* AgoraRtcEngineKit.framework */; };
+		0C6FD0D11F386516009A0AC2 /* EVMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0BD1F386516009A0AC2 /* EVMediaFramework.framework */; };
+		0C6FD0D21F386516009A0AC2 /* EVRTCFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0BE1F386516009A0AC2 /* EVRTCFramework.framework */; };
+		0C6FD0D31F386516009A0AC2 /* EVSDKBaseFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FD0BF1F386516009A0AC2 /* EVSDKBaseFramework.framework */; };
+		0C6FD0D41F386516009A0AC2 /* CCAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0C21F386516009A0AC2 /* CCAlertManager.m */; };
+		0C6FD0D51F386516009A0AC2 /* EVMediaAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0C41F386516009A0AC2 /* EVMediaAuth.m */; };
+		0C6FD0D61F386516009A0AC2 /* EVNetRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0C61F386516009A0AC2 /* EVNetRequestManager.m */; };
+		0C6FD0D71F386516009A0AC2 /* EVScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0C81F386516009A0AC2 /* EVScreenManager.m */; };
+		0C6FD0D81F386516009A0AC2 /* EVGenerateQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0CB1F386516009A0AC2 /* EVGenerateQRViewController.m */; };
+		0C6FD0D91F386516009A0AC2 /* EVScanQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0CD1F386516009A0AC2 /* EVScanQRViewController.m */; };
+		0C6FD0DA1F386516009A0AC2 /* UIView+XibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0CF1F386516009A0AC2 /* UIView+XibConfiguration.m */; };
+		0C6FD0DC1F386582009A0AC2 /* EVRTCRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0DB1F386582009A0AC2 /* EVRTCRootViewController.swift */; };
+		0C6FD0DE1F387D05009A0AC2 /* EVRTCSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0DD1F387D05009A0AC2 /* EVRTCSettingViewController.swift */; };
+		0C6FD0E01F387D0D009A0AC2 /* EVRTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0DF1F387D0D009A0AC2 /* EVRTCViewController.swift */; };
+		0C6FD0E21F387D15009A0AC2 /* EVShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD0E11F387D15009A0AC2 /* EVShareViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C0D29641F3968590058FE0E /* VideoSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSession.swift; sourceTree = "<group>"; };
+		0C6FD01C1F3856B6009A0AC2 /* EasyILive_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyILive_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C6FD0201F3856B6009A0AC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C6FD0221F3856B6009A0AC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0C6FD0231F3856B6009A0AC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0C6FD0291F3856B6009A0AC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C6FD02B1F3856B6009A0AC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C6FD02E1F3856B6009A0AC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C6FD0301F3856B6009A0AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C6FD0361F385705009A0AC2 /* EVRTCRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVRTCRootViewController.h; sourceTree = "<group>"; };
+		0C6FD0371F385705009A0AC2 /* EVRTCRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVRTCRootViewController.m; sourceTree = "<group>"; };
+		0C6FD0381F385705009A0AC2 /* EVRTCSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVRTCSettingViewController.h; sourceTree = "<group>"; };
+		0C6FD0391F385705009A0AC2 /* EVRTCSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVRTCSettingViewController.m; sourceTree = "<group>"; };
+		0C6FD03A1F385705009A0AC2 /* EVRTCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVRTCViewController.h; sourceTree = "<group>"; };
+		0C6FD03B1F385705009A0AC2 /* EVRTCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVRTCViewController.m; sourceTree = "<group>"; };
+		0C6FD03C1F385705009A0AC2 /* EVShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVShareViewController.h; sourceTree = "<group>"; };
+		0C6FD03D1F385705009A0AC2 /* EVShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVShareViewController.m; sourceTree = "<group>"; };
+		0C6FD04E1F385705009A0AC2 /* VideoSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoSession.h; sourceTree = "<group>"; };
+		0C6FD04F1F385705009A0AC2 /* VideoSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoSession.m; sourceTree = "<group>"; };
+		0C6FD0661F3858A7009A0AC2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0C6FD0681F3858AE009A0AC2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0C6FD06A1F3858B6009A0AC2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0C6FD06B1F3858B6009A0AC2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		0C6FD06E1F3858BD009A0AC2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0C6FD0701F3858C3009A0AC2 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		0C6FD0721F385911009A0AC2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0C6FD0741F385917009A0AC2 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		0C6FD0761F38591F009A0AC2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0C6FD0781F385928009A0AC2 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		0C6FD07A1F385934009A0AC2 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		0C6FD07C1F38593C009A0AC2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0C6FD07E1F385942009A0AC2 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		0C6FD0801F385949009A0AC2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0C6FD0881F3860BD009A0AC2 /* EasyILive_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyILive_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C6FD08A1F3860BD009A0AC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C6FD08F1F3860BD009A0AC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C6FD0911F3860BD009A0AC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C6FD0941F3860BD009A0AC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C6FD0961F3860BD009A0AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C6FD09A1F38639A009A0AC2 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		0C6FD09C1F3864E0009A0AC2 /* AgoraRtcEngineKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraRtcEngineKit.framework; sourceTree = "<group>"; };
+		0C6FD09D1F3864E0009A0AC2 /* EVMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EVMediaFramework.framework; sourceTree = "<group>"; };
+		0C6FD09E1F3864E0009A0AC2 /* EVRTCFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EVRTCFramework.framework; sourceTree = "<group>"; };
+		0C6FD09F1F3864E0009A0AC2 /* EVSDKBaseFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EVSDKBaseFramework.framework; sourceTree = "<group>"; };
+		0C6FD0A11F3864E0009A0AC2 /* CCAlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAlertManager.h; sourceTree = "<group>"; };
+		0C6FD0A21F3864E0009A0AC2 /* CCAlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAlertManager.m; sourceTree = "<group>"; };
+		0C6FD0A31F3864E0009A0AC2 /* EVMediaAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVMediaAuth.h; sourceTree = "<group>"; };
+		0C6FD0A41F3864E0009A0AC2 /* EVMediaAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVMediaAuth.m; sourceTree = "<group>"; };
+		0C6FD0A51F3864E0009A0AC2 /* EVNetRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNetRequestManager.h; sourceTree = "<group>"; };
+		0C6FD0A61F3864E0009A0AC2 /* EVNetRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNetRequestManager.m; sourceTree = "<group>"; };
+		0C6FD0A71F3864E0009A0AC2 /* EVScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVScreenManager.h; sourceTree = "<group>"; };
+		0C6FD0A81F3864E0009A0AC2 /* EVScreenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVScreenManager.m; sourceTree = "<group>"; };
+		0C6FD0AA1F3864E0009A0AC2 /* EVGenerateQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVGenerateQRViewController.h; sourceTree = "<group>"; };
+		0C6FD0AB1F3864E0009A0AC2 /* EVGenerateQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVGenerateQRViewController.m; sourceTree = "<group>"; };
+		0C6FD0AC1F3864E0009A0AC2 /* EVScanQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVScanQRViewController.h; sourceTree = "<group>"; };
+		0C6FD0AD1F3864E0009A0AC2 /* EVScanQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVScanQRViewController.m; sourceTree = "<group>"; };
+		0C6FD0AE1F3864E0009A0AC2 /* UIView+XibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XibConfiguration.h"; sourceTree = "<group>"; };
+		0C6FD0AF1F3864E0009A0AC2 /* UIView+XibConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XibConfiguration.m"; sourceTree = "<group>"; };
+		0C6FD0BC1F386516009A0AC2 /* AgoraRtcEngineKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraRtcEngineKit.framework; sourceTree = "<group>"; };
+		0C6FD0BD1F386516009A0AC2 /* EVMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EVMediaFramework.framework; sourceTree = "<group>"; };
+		0C6FD0BE1F386516009A0AC2 /* EVRTCFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EVRTCFramework.framework; sourceTree = "<group>"; };
+		0C6FD0BF1F386516009A0AC2 /* EVSDKBaseFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EVSDKBaseFramework.framework; sourceTree = "<group>"; };
+		0C6FD0C11F386516009A0AC2 /* CCAlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAlertManager.h; sourceTree = "<group>"; };
+		0C6FD0C21F386516009A0AC2 /* CCAlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAlertManager.m; sourceTree = "<group>"; };
+		0C6FD0C31F386516009A0AC2 /* EVMediaAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVMediaAuth.h; sourceTree = "<group>"; };
+		0C6FD0C41F386516009A0AC2 /* EVMediaAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVMediaAuth.m; sourceTree = "<group>"; };
+		0C6FD0C51F386516009A0AC2 /* EVNetRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNetRequestManager.h; sourceTree = "<group>"; };
+		0C6FD0C61F386516009A0AC2 /* EVNetRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNetRequestManager.m; sourceTree = "<group>"; };
+		0C6FD0C71F386516009A0AC2 /* EVScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVScreenManager.h; sourceTree = "<group>"; };
+		0C6FD0C81F386516009A0AC2 /* EVScreenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVScreenManager.m; sourceTree = "<group>"; };
+		0C6FD0CA1F386516009A0AC2 /* EVGenerateQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVGenerateQRViewController.h; sourceTree = "<group>"; };
+		0C6FD0CB1F386516009A0AC2 /* EVGenerateQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVGenerateQRViewController.m; sourceTree = "<group>"; };
+		0C6FD0CC1F386516009A0AC2 /* EVScanQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVScanQRViewController.h; sourceTree = "<group>"; };
+		0C6FD0CD1F386516009A0AC2 /* EVScanQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVScanQRViewController.m; sourceTree = "<group>"; };
+		0C6FD0CE1F386516009A0AC2 /* UIView+XibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XibConfiguration.h"; sourceTree = "<group>"; };
+		0C6FD0CF1F386516009A0AC2 /* UIView+XibConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XibConfiguration.m"; sourceTree = "<group>"; };
+		0C6FD0DB1F386582009A0AC2 /* EVRTCRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVRTCRootViewController.swift; sourceTree = "<group>"; };
+		0C6FD0DD1F387D05009A0AC2 /* EVRTCSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVRTCSettingViewController.swift; sourceTree = "<group>"; };
+		0C6FD0DF1F387D0D009A0AC2 /* EVRTCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVRTCViewController.swift; sourceTree = "<group>"; };
+		0C6FD0E11F387D15009A0AC2 /* EVShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVShareViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C6FD0191F3856B6009A0AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6FD0811F385949009A0AC2 /* libsqlite3.tbd in Frameworks */,
+				0C6FD07F1F385942009A0AC2 /* libbz2.tbd in Frameworks */,
+				0C6FD07D1F38593C009A0AC2 /* libz.tbd in Frameworks */,
+				0C6FD07B1F385934009A0AC2 /* libstdc++.6.tbd in Frameworks */,
+				0C6FD0B01F3864E0009A0AC2 /* AgoraRtcEngineKit.framework in Frameworks */,
+				0C6FD0771F38591F009A0AC2 /* SystemConfiguration.framework in Frameworks */,
+				0C6FD0B21F3864E0009A0AC2 /* EVRTCFramework.framework in Frameworks */,
+				0C6FD0751F385917009A0AC2 /* VideoToolbox.framework in Frameworks */,
+				0C6FD0731F385911009A0AC2 /* AudioToolbox.framework in Frameworks */,
+				0C6FD0711F3858C3009A0AC2 /* libresolv.tbd in Frameworks */,
+				0C6FD0B31F3864E0009A0AC2 /* EVSDKBaseFramework.framework in Frameworks */,
+				0C6FD0B11F3864E0009A0AC2 /* EVMediaFramework.framework in Frameworks */,
+				0C6FD06F1F3858BD009A0AC2 /* libc++.tbd in Frameworks */,
+				0C6FD06C1F3858B6009A0AC2 /* CoreMedia.framework in Frameworks */,
+				0C6FD06D1F3858B6009A0AC2 /* CoreMotion.framework in Frameworks */,
+				0C6FD0691F3858AE009A0AC2 /* CoreTelephony.framework in Frameworks */,
+				0C6FD0671F3858A7009A0AC2 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6FD0851F3860BD009A0AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0D29721F3974710058FE0E /* libsqlite3.tbd in Frameworks */,
+				0C0D29711F39746B0058FE0E /* libbz2.tbd in Frameworks */,
+				0C0D29701F3974650058FE0E /* libz.tbd in Frameworks */,
+				0C0D296F1F3974600058FE0E /* libstdc++.6.tbd in Frameworks */,
+				0C0D296E1F3974590058FE0E /* libresolv.tbd in Frameworks */,
+				0C0D296D1F3974500058FE0E /* libc++.tbd in Frameworks */,
+				0C0D296C1F39744A0058FE0E /* SystemConfiguration.framework in Frameworks */,
+				0C0D296A1F3974420058FE0E /* AudioToolbox.framework in Frameworks */,
+				0C0D296B1F3974420058FE0E /* VideoToolbox.framework in Frameworks */,
+				0C0D29681F3974350058FE0E /* CoreMedia.framework in Frameworks */,
+				0C0D29691F3974350058FE0E /* CoreMotion.framework in Frameworks */,
+				0C0D29671F39742F0058FE0E /* CoreTelephony.framework in Frameworks */,
+				0C0D29661F3974290058FE0E /* AVFoundation.framework in Frameworks */,
+				0C6FD0D01F386516009A0AC2 /* AgoraRtcEngineKit.framework in Frameworks */,
+				0C6FD0D11F386516009A0AC2 /* EVMediaFramework.framework in Frameworks */,
+				0C6FD0D31F386516009A0AC2 /* EVSDKBaseFramework.framework in Frameworks */,
+				0C6FD0D21F386516009A0AC2 /* EVRTCFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C6FD0131F3856B6009A0AC2 = {
+			isa = PBXGroup;
+			children = (
+				0C6FD01E1F3856B6009A0AC2 /* EasyILive_iOS */,
+				0C6FD0891F3860BD009A0AC2 /* EasyILive_Swift */,
+				0C6FD01D1F3856B6009A0AC2 /* Products */,
+				0C6FD0651F3858A7009A0AC2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0C6FD01D1F3856B6009A0AC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C6FD01C1F3856B6009A0AC2 /* EasyILive_iOS.app */,
+				0C6FD0881F3860BD009A0AC2 /* EasyILive_Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C6FD01E1F3856B6009A0AC2 /* EasyILive_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0C6FD0221F3856B6009A0AC2 /* AppDelegate.h */,
+				0C6FD0231F3856B6009A0AC2 /* AppDelegate.m */,
+				0C6FD0361F385705009A0AC2 /* EVRTCRootViewController.h */,
+				0C6FD0371F385705009A0AC2 /* EVRTCRootViewController.m */,
+				0C6FD0381F385705009A0AC2 /* EVRTCSettingViewController.h */,
+				0C6FD0391F385705009A0AC2 /* EVRTCSettingViewController.m */,
+				0C6FD03A1F385705009A0AC2 /* EVRTCViewController.h */,
+				0C6FD03B1F385705009A0AC2 /* EVRTCViewController.m */,
+				0C6FD03C1F385705009A0AC2 /* EVShareViewController.h */,
+				0C6FD03D1F385705009A0AC2 /* EVShareViewController.m */,
+				0C6FD04E1F385705009A0AC2 /* VideoSession.h */,
+				0C6FD04F1F385705009A0AC2 /* VideoSession.m */,
+				0C6FD09B1F3864E0009A0AC2 /* Frameworks */,
+				0C6FD0A01F3864E0009A0AC2 /* Utils */,
+				0C6FD0281F3856B6009A0AC2 /* Main.storyboard */,
+				0C6FD02B1F3856B6009A0AC2 /* Assets.xcassets */,
+				0C6FD02D1F3856B6009A0AC2 /* LaunchScreen.storyboard */,
+				0C6FD0301F3856B6009A0AC2 /* Info.plist */,
+				0C6FD01F1F3856B6009A0AC2 /* Supporting Files */,
+			);
+			path = EasyILive_iOS;
+			sourceTree = "<group>";
+		};
+		0C6FD01F1F3856B6009A0AC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C6FD0201F3856B6009A0AC2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C6FD0651F3858A7009A0AC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C6FD0801F385949009A0AC2 /* libsqlite3.tbd */,
+				0C6FD07E1F385942009A0AC2 /* libbz2.tbd */,
+				0C6FD07C1F38593C009A0AC2 /* libz.tbd */,
+				0C6FD07A1F385934009A0AC2 /* libstdc++.6.tbd */,
+				0C6FD0781F385928009A0AC2 /* libstdc++.tbd */,
+				0C6FD0761F38591F009A0AC2 /* SystemConfiguration.framework */,
+				0C6FD0741F385917009A0AC2 /* VideoToolbox.framework */,
+				0C6FD0721F385911009A0AC2 /* AudioToolbox.framework */,
+				0C6FD0701F3858C3009A0AC2 /* libresolv.tbd */,
+				0C6FD06E1F3858BD009A0AC2 /* libc++.tbd */,
+				0C6FD06A1F3858B6009A0AC2 /* CoreMedia.framework */,
+				0C6FD06B1F3858B6009A0AC2 /* CoreMotion.framework */,
+				0C6FD0681F3858AE009A0AC2 /* CoreTelephony.framework */,
+				0C6FD0661F3858A7009A0AC2 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C6FD0891F3860BD009A0AC2 /* EasyILive_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				0C6FD08A1F3860BD009A0AC2 /* AppDelegate.swift */,
+				0C6FD0DB1F386582009A0AC2 /* EVRTCRootViewController.swift */,
+				0C6FD0DD1F387D05009A0AC2 /* EVRTCSettingViewController.swift */,
+				0C6FD0DF1F387D0D009A0AC2 /* EVRTCViewController.swift */,
+				0C6FD0E11F387D15009A0AC2 /* EVShareViewController.swift */,
+				0C0D29641F3968590058FE0E /* VideoSession.swift */,
+				0C6FD0BB1F386516009A0AC2 /* Frameworks */,
+				0C6FD0C01F386516009A0AC2 /* Utils */,
+				0C6FD09A1F38639A009A0AC2 /* Bridging-Header.h */,
+				0C6FD08E1F3860BD009A0AC2 /* Main.storyboard */,
+				0C6FD0911F3860BD009A0AC2 /* Assets.xcassets */,
+				0C6FD0931F3860BD009A0AC2 /* LaunchScreen.storyboard */,
+				0C6FD0961F3860BD009A0AC2 /* Info.plist */,
+			);
+			path = EasyILive_Swift;
+			sourceTree = "<group>";
+		};
+		0C6FD09B1F3864E0009A0AC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C6FD09C1F3864E0009A0AC2 /* AgoraRtcEngineKit.framework */,
+				0C6FD09D1F3864E0009A0AC2 /* EVMediaFramework.framework */,
+				0C6FD09E1F3864E0009A0AC2 /* EVRTCFramework.framework */,
+				0C6FD09F1F3864E0009A0AC2 /* EVSDKBaseFramework.framework */,
+			);
+			path = Frameworks;
+			sourceTree = SOURCE_ROOT;
+		};
+		0C6FD0A01F3864E0009A0AC2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0C6FD0A11F3864E0009A0AC2 /* CCAlertManager.h */,
+				0C6FD0A21F3864E0009A0AC2 /* CCAlertManager.m */,
+				0C6FD0A31F3864E0009A0AC2 /* EVMediaAuth.h */,
+				0C6FD0A41F3864E0009A0AC2 /* EVMediaAuth.m */,
+				0C6FD0A51F3864E0009A0AC2 /* EVNetRequestManager.h */,
+				0C6FD0A61F3864E0009A0AC2 /* EVNetRequestManager.m */,
+				0C6FD0A71F3864E0009A0AC2 /* EVScreenManager.h */,
+				0C6FD0A81F3864E0009A0AC2 /* EVScreenManager.m */,
+				0C6FD0A91F3864E0009A0AC2 /* QR */,
+				0C6FD0AE1F3864E0009A0AC2 /* UIView+XibConfiguration.h */,
+				0C6FD0AF1F3864E0009A0AC2 /* UIView+XibConfiguration.m */,
+			);
+			path = Utils;
+			sourceTree = SOURCE_ROOT;
+		};
+		0C6FD0A91F3864E0009A0AC2 /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				0C6FD0AA1F3864E0009A0AC2 /* EVGenerateQRViewController.h */,
+				0C6FD0AB1F3864E0009A0AC2 /* EVGenerateQRViewController.m */,
+				0C6FD0AC1F3864E0009A0AC2 /* EVScanQRViewController.h */,
+				0C6FD0AD1F3864E0009A0AC2 /* EVScanQRViewController.m */,
+			);
+			path = QR;
+			sourceTree = "<group>";
+		};
+		0C6FD0BB1F386516009A0AC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C6FD0BC1F386516009A0AC2 /* AgoraRtcEngineKit.framework */,
+				0C6FD0BD1F386516009A0AC2 /* EVMediaFramework.framework */,
+				0C6FD0BE1F386516009A0AC2 /* EVRTCFramework.framework */,
+				0C6FD0BF1F386516009A0AC2 /* EVSDKBaseFramework.framework */,
+			);
+			path = Frameworks;
+			sourceTree = SOURCE_ROOT;
+		};
+		0C6FD0C01F386516009A0AC2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0C6FD0C11F386516009A0AC2 /* CCAlertManager.h */,
+				0C6FD0C21F386516009A0AC2 /* CCAlertManager.m */,
+				0C6FD0C31F386516009A0AC2 /* EVMediaAuth.h */,
+				0C6FD0C41F386516009A0AC2 /* EVMediaAuth.m */,
+				0C6FD0C51F386516009A0AC2 /* EVNetRequestManager.h */,
+				0C6FD0C61F386516009A0AC2 /* EVNetRequestManager.m */,
+				0C6FD0C71F386516009A0AC2 /* EVScreenManager.h */,
+				0C6FD0C81F386516009A0AC2 /* EVScreenManager.m */,
+				0C6FD0C91F386516009A0AC2 /* QR */,
+				0C6FD0CE1F386516009A0AC2 /* UIView+XibConfiguration.h */,
+				0C6FD0CF1F386516009A0AC2 /* UIView+XibConfiguration.m */,
+			);
+			path = Utils;
+			sourceTree = SOURCE_ROOT;
+		};
+		0C6FD0C91F386516009A0AC2 /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				0C6FD0CA1F386516009A0AC2 /* EVGenerateQRViewController.h */,
+				0C6FD0CB1F386516009A0AC2 /* EVGenerateQRViewController.m */,
+				0C6FD0CC1F386516009A0AC2 /* EVScanQRViewController.h */,
+				0C6FD0CD1F386516009A0AC2 /* EVScanQRViewController.m */,
+			);
+			path = QR;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C6FD01B1F3856B6009A0AC2 /* EasyILive_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C6FD0331F3856B6009A0AC2 /* Build configuration list for PBXNativeTarget "EasyILive_iOS" */;
+			buildPhases = (
+				0C6FD0181F3856B6009A0AC2 /* Sources */,
+				0C6FD0191F3856B6009A0AC2 /* Frameworks */,
+				0C6FD01A1F3856B6009A0AC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyILive_iOS;
+			productName = EasyILive_iOS;
+			productReference = 0C6FD01C1F3856B6009A0AC2 /* EasyILive_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C6FD0871F3860BD009A0AC2 /* EasyILive_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C6FD0971F3860BD009A0AC2 /* Build configuration list for PBXNativeTarget "EasyILive_Swift" */;
+			buildPhases = (
+				0C6FD0841F3860BD009A0AC2 /* Sources */,
+				0C6FD0851F3860BD009A0AC2 /* Frameworks */,
+				0C6FD0861F3860BD009A0AC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyILive_Swift;
+			productName = EasyILive_Swift;
+			productReference = 0C6FD0881F3860BD009A0AC2 /* EasyILive_Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C6FD0141F3856B6009A0AC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Easyvaas;
+				TargetAttributes = {
+					0C6FD01B1F3856B6009A0AC2 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PWD8THY2VS;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					0C6FD0871F3860BD009A0AC2 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PWD8THY2VS;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 0C6FD0171F3856B6009A0AC2 /* Build configuration list for PBXProject "EasyILive_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C6FD0131F3856B6009A0AC2;
+			productRefGroup = 0C6FD01D1F3856B6009A0AC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C6FD01B1F3856B6009A0AC2 /* EasyILive_iOS */,
+				0C6FD0871F3860BD009A0AC2 /* EasyILive_Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C6FD01A1F3856B6009A0AC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6FD02F1F3856B6009A0AC2 /* LaunchScreen.storyboard in Resources */,
+				0C6FD02C1F3856B6009A0AC2 /* Assets.xcassets in Resources */,
+				0C6FD02A1F3856B6009A0AC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6FD0861F3860BD009A0AC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6FD0951F3860BD009A0AC2 /* LaunchScreen.storyboard in Resources */,
+				0C6FD0921F3860BD009A0AC2 /* Assets.xcassets in Resources */,
+				0C6FD0901F3860BD009A0AC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C6FD0181F3856B6009A0AC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6FD0B51F3864E0009A0AC2 /* EVMediaAuth.m in Sources */,
+				0C6FD0511F385705009A0AC2 /* EVRTCSettingViewController.m in Sources */,
+				0C6FD0531F385705009A0AC2 /* EVShareViewController.m in Sources */,
+				0C6FD0B81F3864E0009A0AC2 /* EVGenerateQRViewController.m in Sources */,
+				0C6FD0B91F3864E0009A0AC2 /* EVScanQRViewController.m in Sources */,
+				0C6FD0BA1F3864E0009A0AC2 /* UIView+XibConfiguration.m in Sources */,
+				0C6FD0501F385705009A0AC2 /* EVRTCRootViewController.m in Sources */,
+				0C6FD0241F3856B6009A0AC2 /* AppDelegate.m in Sources */,
+				0C6FD0B41F3864E0009A0AC2 /* CCAlertManager.m in Sources */,
+				0C6FD0B71F3864E0009A0AC2 /* EVScreenManager.m in Sources */,
+				0C6FD05B1F385705009A0AC2 /* VideoSession.m in Sources */,
+				0C6FD0521F385705009A0AC2 /* EVRTCViewController.m in Sources */,
+				0C6FD0B61F3864E0009A0AC2 /* EVNetRequestManager.m in Sources */,
+				0C6FD0211F3856B6009A0AC2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6FD0841F3860BD009A0AC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6FD0D41F386516009A0AC2 /* CCAlertManager.m in Sources */,
+				0C6FD0D51F386516009A0AC2 /* EVMediaAuth.m in Sources */,
+				0C6FD0DC1F386582009A0AC2 /* EVRTCRootViewController.swift in Sources */,
+				0C6FD0DE1F387D05009A0AC2 /* EVRTCSettingViewController.swift in Sources */,
+				0C6FD0D61F386516009A0AC2 /* EVNetRequestManager.m in Sources */,
+				0C0D29651F3968590058FE0E /* VideoSession.swift in Sources */,
+				0C6FD0D71F386516009A0AC2 /* EVScreenManager.m in Sources */,
+				0C6FD0D91F386516009A0AC2 /* EVScanQRViewController.m in Sources */,
+				0C6FD0D81F386516009A0AC2 /* EVGenerateQRViewController.m in Sources */,
+				0C6FD0DA1F386516009A0AC2 /* UIView+XibConfiguration.m in Sources */,
+				0C6FD08B1F3860BD009A0AC2 /* AppDelegate.swift in Sources */,
+				0C6FD0E21F387D15009A0AC2 /* EVShareViewController.swift in Sources */,
+				0C6FD0E01F387D0D009A0AC2 /* EVRTCViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0C6FD0281F3856B6009A0AC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C6FD0291F3856B6009A0AC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C6FD02D1F3856B6009A0AC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C6FD02E1F3856B6009A0AC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0C6FD08E1F3860BD009A0AC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C6FD08F1F3860BD009A0AC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C6FD0931F3860BD009A0AC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C6FD0941F3860BD009A0AC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C6FD0311F3856B6009A0AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0C6FD0321F3856B6009A0AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C6FD0341F3856B6009A0AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PWD8THY2VS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = EasyILive_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.easyvaas.EasyILive-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0C6FD0351F3856B6009A0AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PWD8THY2VS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = EasyILive_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.easyvaas.EasyILive-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0C6FD0981F3860BD009A0AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PWD8THY2VS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../";
+				INFOPLIST_FILE = EasyILive_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.easyvaas.EasyILive-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/EasyILive_Swift/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0C6FD0991F3860BD009A0AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PWD8THY2VS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../";
+				INFOPLIST_FILE = EasyILive_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.easyvaas.EasyILive-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/EasyILive_Swift/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C6FD0171F3856B6009A0AC2 /* Build configuration list for PBXProject "EasyILive_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C6FD0311F3856B6009A0AC2 /* Debug */,
+				0C6FD0321F3856B6009A0AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C6FD0331F3856B6009A0AC2 /* Build configuration list for PBXNativeTarget "EasyILive_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C6FD0341F3856B6009A0AC2 /* Debug */,
+				0C6FD0351F3856B6009A0AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C6FD0971F3860BD009A0AC2 /* Build configuration list for PBXNativeTarget "EasyILive_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C6FD0981F3860BD009A0AC2 /* Debug */,
+				0C6FD0991F3860BD009A0AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C6FD0141F3856B6009A0AC2 /* Project object */;
+}
