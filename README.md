@@ -1,6 +1,8 @@
 # [EasyILive iOS SDK](https://github.com/easyvaas/EasyLive_iOS)
 EasyILive SDK 是易视云提供的多人视频互动解决方案
 
+文档地址 https://easyvaas.github.io/doc/chapter5/iOS.html
+
 ## 一. 功能特性
 
 * 超低延时
