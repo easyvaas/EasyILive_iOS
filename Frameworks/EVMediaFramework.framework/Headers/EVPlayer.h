@@ -165,4 +165,11 @@ typedef void(^EVPlayerCompleteBlock)(EVPlayerResponseCode responseCode, NSDictio
  */
 - (void)setVolume:(float)volume;
 
+/**
+ 获取 EVPlayer 版本号
+ 
+ @return 版本号
+ */
++ (NSString *)getVersion;
+
 @end

@@ -278,12 +278,18 @@ typedef void(^EVStreamerCompleteBlock)(EVStreamerResponseCode responseCode, NSDi
  */
 @property(nonatomic, copy) void(^audioProcessingCallback)(CMSampleBufferRef sampleBuffer);
 
+/**
+ 获取 EVStreamer 版本号
+ 
+ @return 版本号
+ */
++ (NSString *)getVersion;
 
 ///---------------------------
 /// @name 连麦
 ///---------------------------
 #pragma mark - 连麦
-@property (nonatomic, copy) NSString *agoraAppid;  /**< 声网的 appid, 一定要在调用 livePrepareComplete: 前设置 */
+@property (nonatomic, copy) NSString *agoraAppid;  /**< 连麦的 appid, 一定要在调用 livePrepareComplete: 前设置 */
 
 /**
  开始连麦(目前只支持iPhone6及iPhoneSE以上机型)(deprecated)

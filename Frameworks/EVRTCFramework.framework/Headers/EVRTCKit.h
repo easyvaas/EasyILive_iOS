@@ -153,6 +153,13 @@ typedef void(^EVRTCCallback)(EVRtcResponseCode code,  NSDictionary * _Nullable i
  */
 - (int)switchCamera;
 
+/**
+ 获取 EVRTC 版本号
+ 
+ @return 版本号
+ */
++ (NSString *)getVersion;
+
 @end
 
 
